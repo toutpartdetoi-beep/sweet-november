@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tout part de Toi — Lettre de novembre 2026</title>
+<meta name="description" content="Lettre de novembre 2026 : assimilation, Café Psycho, Tout part de Toi — L’atelier et Les Carnets.">
+<style>
+:root{
+  --ink:#3e2c33;
+  --muted:#75646a;
+  --paper:#fbf1e3;
+  --card:#fffaf2;
+  --plum:#5a3048;
+  --plum-deep:#472238;
+  --wine:#704257;
+  --terracotta:#b87560;
+  --gold:#d5aa62;
+  --line:#e3cdbb;
+  --cream:#fff7e9;
+  --rose:#f3ded4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.72;
+}
+a{color:var(--plum);font-weight:600;text-underline-offset:3px}
+.wrap{width:min(860px,calc(100% - 32px));margin:0 auto}
+.topbar{
+  padding:15px 20px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.78rem;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+  text-align:center;
+  background:var(--plum-deep);
+  color:#f7e8ce;
+  border-bottom:1px solid rgba(213,170,98,.55);
+}
+.hero{
+  padding:72px 0 62px;
+  text-align:center;
+  background:linear-gradient(135deg,var(--plum-deep) 0%,var(--plum) 58%,#6b3a53 100%);
+  border-bottom:3px solid var(--gold);
+  color:#fff7e9;
+}
+.eyebrow{
+  font-family:Arial,Helvetica,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.77rem;
+  color:var(--plum);
+  font-weight:700;
+  margin-bottom:18px;
+}
+.hero .eyebrow{color:var(--gold)}
+h1{
+  font-weight:400;
+  font-size:clamp(2.6rem,6vw,4.8rem);
+  line-height:1.04;
+  margin:0 auto 18px;
+  max-width:780px;
+  color:#fff8eb;
+}
+.lead{
+  font-size:1.2rem;
+  max-width:660px;
+  margin:0 auto;
+  color:#ead9d2;
+}
+.spark{margin-top:24px;color:var(--gold);letter-spacing:.45em}
+section{padding:54px 0;border-bottom:1px solid var(--line)}
+h2{font-size:2rem;font-weight:400;line-height:1.2;margin:0 0 22px;color:var(--plum-deep)}
+h3{font-size:1.25rem;margin:30px 0 10px;font-weight:600;color:var(--plum-deep)}
+p{margin:0 0 16px}
+.quote{
+  margin:30px 0;
+  padding:22px 26px;
+  border-left:5px solid var(--gold);
+  background:#fff9f0;
+  font-size:1.26rem;
+  font-style:italic;
+  color:var(--plum-deep);
+  box-shadow:0 8px 24px rgba(71,34,56,.06);
+}
+.practice{
+  background:#fff9f1;
+  border:1px solid #e6c9b8;
+  border-radius:18px;
+  padding:28px;
+  margin-top:28px;
+  box-shadow:0 10px 30px rgba(71,34,56,.045);
+}
+.columns{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:14px;
+  margin-top:18px;
+}
+.mini{
+  background:#fffaf2;
+  border:1px solid #e2c4b3;
+  border-radius:14px;
+  padding:18px;
+}
+.mini b{display:block;margin-bottom:8px;color:var(--plum-deep)}
+.visual{
+  width:100%;
+  display:block;
+  border-radius:20px;
+  margin:26px 0;
+  box-shadow:0 14px 34px rgba(71,34,56,.12);
+}
+.cafe{background:#fff8ed}
+.workshop{
+  background:linear-gradient(145deg,#fff7eb 0%,#f8e5da 62%,#f2d7ca 100%);
+  border-top:3px solid var(--gold);
+  border-bottom:3px solid var(--gold);
+}
+.kicker{
+  display:inline-block;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.76rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:7px 12px;
+  border-radius:999px;
+  color:#fff5e5;
+  background:var(--plum);
+  margin-bottom:16px;
+}
+.alert{
+  margin:26px 0;
+  background:#fff8ec;
+  border:2px solid var(--gold);
+  border-radius:18px;
+  padding:22px 24px;
+}
+.price{
+  background:var(--plum);
+  color:#fff7e9;
+  border-radius:18px;
+  padding:24px;
+  margin:24px 0;
+  box-shadow:0 8px 20px rgba(71,34,56,.16);
+}
+.price strong{font-size:1.45rem;color:#fff7e9}
+.cta{
+  display:inline-block;
+  margin:8px 8px 0 0;
+  background:var(--plum);
+  color:#fff7e9;
+  text-decoration:none;
+  padding:13px 20px;
+  border-radius:999px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.9rem;
+  box-shadow:0 6px 16px rgba(71,34,56,.15);
+}
+.cta.alt{background:var(--terracotta)}
+.cta.gold{background:var(--gold);color:var(--plum-deep)}
+.list{padding-left:0;list-style:none;margin:14px 0}
+.list li{margin:9px 0;padding-left:24px;position:relative}
+.list li:before{content:"✦";position:absolute;left:0;color:var(--terracotta)}
+.carnets{background:var(--rose)}
+.closing{text-align:center;padding:58px 0 68px}
+.closing p{max-width:650px;margin-left:auto;margin-right:auto}
+.closing .last{font-size:2rem;font-style:italic;margin-top:22px;color:var(--plum-deep)}
+footer{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.8rem;
+  text-align:center;
+  color:var(--muted);
+  padding:28px 0 42px;
+  border-top:1px solid var(--line);
+}
+@media(max-width:680px){
+  .hero{padding:54px 0 48px}
+  .topbar{font-size:.7rem}
+  section{padding:42px 0}
+  .wrap{width:min(100% - 22px,860px)}
+  .columns{grid-template-columns:1fr}
+  .practice,.mini,.alert,.price{border-radius:14px;padding:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">Tout part de Toi — Newsletter • Novembre 2026</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">La lettre de novembre</div>
+    <h1>Et si vous ne régressiez pas&nbsp;?</h1>
+    <p class="lead">Parfois, ce qui ressemble à un arrêt est simplement un temps d’assimilation.</p>
+    <div class="spark">✦ ✧ ✦</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p>Il y a une phrase que j’entends souvent en thérapie&nbsp;:</p>
+    <p><strong>«&nbsp;J’ai l’impression de régresser.&nbsp;»</strong></p>
+
+    <p>Parce qu’une émotion revient.</p>
+    <p>Parce qu’on retombe dans une vieille habitude.</p>
+    <p>Parce qu’on se sent à nouveau fragile là où, quelques semaines auparavant, on pensait avoir avancé.</p>
+    <p>Parce qu’on comprend très bien quelque chose… mais qu’on ne parvient pas encore à le vivre autrement à chaque fois.</p>
+
+    <p>Et rapidement arrive cette idée&nbsp;:</p>
+    <p><strong>«&nbsp;Tout ce travail n’a servi à rien.&nbsp;»</strong></p>
+
+    <p>Mais non.</p>
+    <p>Pas forcément.</p>
+    <p>Il se peut même que quelque chose de très important soit justement en train de se passer.</p>
+
+    <h2>Assimiler n’est pas reculer</h2>
+
+    <p>Dans le cycle du contact en Gestalt, il existe un temps après l’expérience.</p>
+    <p>Un moment où ce qui vient d’être vécu n’a plus besoin d’être immédiatement analysé, travaillé, amélioré ou transformé.</p>
+    <p>Il a besoin d’être <strong>assimilé</strong>.</p>
+
+    <p>C’est un temps où nous intégrons ce que l’expérience nous a appris. Ce qui nous nourrit peut rester. Ce qui ne nous appartient pas peut être laissé.</p>
+
+    <p>Et petit à petit, l’expérience cesse d’être seulement quelque chose que nous avons compris.</p>
+    <p>Elle devient quelque chose que nous savons davantage <strong>de l’intérieur</strong>.</p>
+
+    <p><strong>Et si je n’étais pas en train de régresser&nbsp;? Et si j’étais simplement en train d’assimiler&nbsp;?</strong></p>
+
+    <h2>L’hiver sait faire cela</h2>
+
+    <p>À cette période de l’année, la nature nous donne une assez belle image de ce processus.</p>
+    <p>À première vue, il ne se passe plus grand-chose. Les feuilles tombent. La lumière diminue. La croissance visible ralentit.</p>
+    <p>Mais cela ne signifie pas que le vivant s’est arrêté.</p>
+
+    <p><strong>Il conserve. Il trie. Il transforme. Il prépare. Il assimile.</strong></p>
+
+    <p>Nos corps et nos psychismes connaissent eux aussi ces mouvements-là.</p>
+    <p>Nous ne sommes pas faits pour être constamment dans&nbsp;: faire — comprendre — progresser — produire — changer.</p>
+    <p>Il nous faut aussi des temps pour laisser les expériences descendre un peu plus profondément.</p>
+
+    <div class="practice">
+      <div class="eyebrow">Une petite pratique</div>
+      <h2>Laisser décanter</h2>
+
+      <p>Pensez à quelque chose que vous avez beaucoup travaillé ces derniers mois.</p>
+
+      <div class="columns">
+        <div class="mini">
+          <b>1. Qu’est-ce que j’ai compris&nbsp;?</b>
+          <span>Ce qui est vraiment devenu plus clair pour vous.</span>
+        </div>
+        <div class="mini">
+          <b>2. Qu’est-ce qui a déjà changé&nbsp;?</b>
+          <span>Cherchez les petits déplacements, pas les grandes victoires.</span>
+        </div>
+        <div class="mini">
+          <b>3. Qu’est-ce que je peux arrêter de vouloir forcer&nbsp;?</b>
+          <span>Peut-être que quelque chose a simplement besoin de se déposer.</span>
+        </div>
+      </div>
+
+      <div class="quote">Je n’ai peut-être rien à réussir de plus aujourd’hui. Peut-être seulement quelque chose à laisser s’intégrer.</div>
+    </div>
+  </div>
+</section>
+
+<section class="cafe">
+  <div class="wrap">
+    <div class="eyebrow">Café Psycho — samedi 21 novembre</div>
+    <h2>Liens et héritages invisibles</h2>
+
+    <img class="visual" src="cafe-psycho-liens-heritages.png" alt="Photographies de famille anciennes, illustration des liens et héritages invisibles">
+
+    <p>Pour ce dernier Café Psycho de l’année 2026, nous irons explorer ce qui se transmet parfois sans que personne ne nous l’ait explicitement enseigné.</p>
+
+    <p>Des manières d’aimer. Des façons d’entrer en conflit. Des peurs. Des loyautés. Des rôles familiaux.</p>
+
+    <p>Des phrases que l’on n’a peut-être jamais entendues… mais que l’on semble pourtant connaître.</p>
+
+    <p>Certaines choses nous appartiennent. D’autres ont une histoire plus longue que nous.</p>
+
+    <p>Et parfois, comprendre ce que nous portons permet de commencer à choisir ce que nous souhaitons continuer à transmettre.</p>
+
+    <ul class="list">
+      <li><strong>Samedi 21 novembre à 16h30</strong></li>
+      <li>Où cours-tu ? — 35 Grande Rue de Vaise, Lyon 9e</li>
+      <li>Métro D — Valmy</li>
+      <li>Durée : 2 heures</li>
+      <li>Participation libre et consciente</li>
+    </ul>
+
+    <p>Comme toujours&nbsp;: des apports, des échanges, des expériences et une fiche support pour repartir avec quelques repères.</p>
+
+    <h3>Et ensuite, une petite pause</h3>
+
+    <p>Il n’y aura <strong>pas de Café Psycho en décembre</strong>.</p>
+    <p>Nous nous retrouverons en <strong>janvier 2027</strong>.</p>
+
+    <p>Les prochains thèmes ne sont pas encore décidés. Une question qui revient souvent&nbsp;? Un sujet que vous aimeriez explorer pendant deux heures avec d’autres&nbsp;?</p>
+
+    <a class="cta" href="mailto:toutpartdetoi@gmail.com?subject=Suggestion%20de%20th%C3%A8me%20pour%20un%20Caf%C3%A9%20Psycho%202027">Suggérer un thème pour 2027</a>
+  </div>
+</section>
+
+<section class="workshop">
+  <div class="wrap">
+    <span class="kicker">Dernière possibilité d’essayer</span>
+    <h2>Tout part de Toi — L’atelier</h2>
+
+    <img class="visual" src="atelier-novembre-salle.jpg" alt="Tout part de Toi — L’atelier, salle préparée pour un week-end de pratique">
+
+    <div class="alert">
+      <h3 style="margin-top:0">Il reste 2 places</h3>
+      <p>Les <strong>28 et 29 novembre</strong>, il sera encore possible de venir découvrir l’atelier et de rejoindre le groupe.</p>
+      <p>Après ce week-end, <strong>le groupe sera fermé jusqu’à la fin du parcours en juin</strong>, afin de poursuivre le travail avec un cadre stable.</p>
+    </div>
+
+    <p>Tout part de Toi — L’atelier, c’est un week-end par mois pour retrouver le corps, le mouvement, la respiration, la créativité, le jeu, l’écriture, la voix et la relation.</p>
+
+    <p>On peut venir <strong>seul·e ou à deux</strong>&nbsp;: avec son ou sa partenaire, une amie, quelqu’un avec qui on souhaite partager cette expérience.</p>
+
+    <p>L’atelier peut particulièrement accompagner les périodes de transition, de fatigue ou de reprise après un burn-out. Mais il peut aussi être un espace de prévention, notamment lorsque l’on est entrepreneur·e, indépendant·e, aidant·e ou très habitué·e à porter beaucoup.</p>
+
+    <div class="price">
+      <strong>Tarif : à partir de 420 € pour l’année complète</strong><br>
+      Paiement possible en plusieurs fois.
+    </div>
+
+    <p>Et si vous hésitez encore, je propose un <strong>entretien téléphonique de 30 minutes offert</strong>, simplement pour faire connaissance, répondre à vos questions et vérifier ensemble que l’atelier correspond bien à ce que vous cherchez.</p>
+
+    <a class="cta" href="mailto:toutpartdetoi@gmail.com?subject=Entretien%20t%C3%A9l%C3%A9phonique%20-%20Tout%20part%20de%20Toi%20L%27atelier">Demander mon entretien de 30 min</a>
+
+    <a class="cta alt" href="https://youtu.be/-3dnkPJEV4c?si=Gqh44IGQjELnrcE1" target="_blank" rel="noopener">Voir la vidéo de présentation</a>
+  </div>
+</section>
+
+<section class="carnets">
+  <div class="wrap">
+    <div class="eyebrow">Tout part de Toi — Les Carnets</div>
+    <h2>Une bibliothèque vivante</h2>
+
+    <img class="visual" src="les-carnets.jpg" alt="Tout part de Toi — Les Carnets">
+
+    <p>J’y archive progressivement mes anciens textes et j’en ajoute de nouveaux quand quelque chose me traverse&nbsp;: une question entendue souvent au cabinet, un étonnement, un coup de cœur, un coup de gueule, une réflexion sur la thérapie, les relations ou simplement notre manière d’être au monde.</p>
+
+    <p>Je n’écris pas à un rythme fixe. J’écris quand il y a quelque chose qui demande à devenir un texte.</p>
+
+    <a class="cta gold" href="https://toutpartdetoi-beep.github.io/les-carnets/" target="_blank" rel="noopener">Accéder à tous les Carnets</a>
+  </div>
+</section>
+
+<div class="closing wrap">
+  <p>Je ne vais pas vous souhaiter d’avancer vite.</p>
+  <p>Ni même d’avancer tout le temps.</p>
+  <p>Je vais plutôt vous souhaiter de pouvoir reconnaître ces moments où quelque chose travaille en vous <strong>sans avoir besoin d’être immédiatement visible</strong>.</p>
+
+  <p>Parce qu’il y a des moments pour pousser.</p>
+  <p>Des moments pour fleurir.</p>
+  <p>Et d’autres où le vivant fait quelque chose de beaucoup plus discret&nbsp;:</p>
+
+  <div class="last">il assimile.</div>
+
+  <p style="margin-top:26px"><strong>Belle traversée de novembre.</strong></p>
+</div>
+
+<footer class="wrap">
+  <strong>Émilie TREYNET</strong><br>
+  Psycho-praticienne Gestalt • Individuel • Couple • Médiations artistiques<br>
+  <strong>Tout part de Toi</strong><br><br>
+
+  <a href="https://emilietreynetgestalt.com" target="_blank" rel="noopener">emilietreynetgestalt.com</a>
+  ·
+  <a href="mailto:toutpartdetoi@gmail.com">toutpartdetoi@gmail.com</a>
+</footer>
+
+</body>
+</html>
